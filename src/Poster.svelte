@@ -32,6 +32,8 @@
 		transition-timing-function: ease;
 		font-family: 'Cabin', sans-serif;
 		font-size: clamp(1rem, 15vw, 10rem);
+		word-wrap: normal;
+		word-break: normal;
 		color: white;
 		padding-bottom: 15vh;
 	}
