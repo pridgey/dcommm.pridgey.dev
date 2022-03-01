@@ -15,28 +15,28 @@
 			role="button"
 			on:click={() => (showIndex = 0)}
 		>
-			<span class="text">Week One</span><span>Feb 4th</span>
+			<span class="text">Week One</span><span>Mar 4th</span>
 		</button>
 		<button
 			class="button-57 {showIndex === 1 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 1)}
 		>
-			<span class="text">Week Two</span><span>Feb 11th</span>
+			<span class="text">Week Two</span><span>Mar 11th</span>
 		</button>
 		<button
 			class="button-57 {showIndex === 2 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 2)}
 		>
-			<span class="text">Week Three</span><span>Feb 18th</span>
+			<span class="text">Week Three</span><span>Mar 18th</span>
 		</button>
 		<button
 			class="button-57 {showIndex === 3 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 3)}
 		>
-			<span class="text">Week Four</span><span>Feb 25th</span>
+			<span class="text">Week Four</span><span>Mar 25th</span>
 		</button>
 	</nav>
 </main>
