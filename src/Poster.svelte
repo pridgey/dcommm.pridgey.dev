@@ -4,7 +4,7 @@
 	export let show = false;
 </script>
 
-<div style="--background:url({image});--showPoster:{show ? '0px' : '-100%'}">{name}</div>
+<div style="--background:url(/{image});--showPoster:{show ? '0px' : '-100%'}">{name}</div>
 
 <style>
 	@font-face {
