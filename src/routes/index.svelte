@@ -1,17 +1,17 @@
 <script>
 	import Poster from '../Poster.svelte';
 
-	let showIndex = 0;
+	let showIndex = 1;
 </script>
 
 <main>
-	<Poster image="radiorebel.jpg" name="Radio Rebel" show={showIndex === 0} />
+	<Poster disabled={true} image="radiorebel.jpg" name="Radio Rebel" show={showIndex === 0} />
 	<Poster image="fullcourtmiracle.jpg" name="Full Court Miracle" show={showIndex === 1} />
 	<Poster image="halloweentownhigh.jpg" name="Halloweentown High" show={showIndex === 2} />
 	<Poster image="youwish.jpg" name="You Wish!" show={showIndex === 3} />
 	<nav>
 		<button
-			class="button-57 {showIndex === 0 && 'selected'}"
+			class="button-57 disabled {showIndex === 0 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 0)}
 		>
@@ -78,6 +78,10 @@
 		user-select: none;
 		-webkit-user-select: none;
 		touch-action: manipulation;
+	}
+
+	.disabled {
+		background: gray;
 	}
 
 	.selected {

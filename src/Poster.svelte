@@ -2,9 +2,16 @@
 	export let image = '';
 	export let name = '';
 	export let show = false;
+	export let disabled = false;
 </script>
 
-<div style="--background:url(/{image});--showPoster:{show ? '0px' : '-100%'}">{name}</div>
+<div
+	style="--disabled:{disabled
+		? 'grayscale(100%)'
+		: ''};--background:url(/{image});--showPoster:{show ? '0px' : '-100%'}"
+>
+	{name}
+</div>
 
 <style>
 	@font-face {
@@ -36,5 +43,6 @@
 		word-break: normal;
 		color: white;
 		padding-bottom: 15vh;
+		filter: var(--disabled);
 	}
 </style>
