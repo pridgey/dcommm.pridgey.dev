@@ -84,7 +84,7 @@
 		background: gray;
 	}
 
-	.disabled .text {
+	.disabled span:last-child {
 		text-decoration: line-through;
 	}
 
