@@ -84,6 +84,10 @@
 		background: gray;
 	}
 
+	.disabled .text {
+		text-decoration: line-through;
+	}
+
 	.selected {
 		background-color: rgb(187, 96, 80);
 	}
