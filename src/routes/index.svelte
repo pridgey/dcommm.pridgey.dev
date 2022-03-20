@@ -1,7 +1,7 @@
 <script>
 	import Poster from '../Poster.svelte';
 
-	let showIndex = 1;
+	let showIndex = 3;
 </script>
 
 <main>
@@ -18,14 +18,14 @@
 			<span class="text">Week One</span><span>Mar 4th</span>
 		</button>
 		<button
-			class="button-57 {showIndex === 1 && 'selected'}"
+			class="button-57 disabled {showIndex === 1 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 1)}
 		>
 			<span class="text">Week Two</span><span>Mar 11th</span>
 		</button>
 		<button
-			class="button-57 {showIndex === 2 && 'selected'}"
+			class="button-57 disabled {showIndex === 2 && 'selected'}"
 			role="button"
 			on:click={() => (showIndex = 2)}
 		>
