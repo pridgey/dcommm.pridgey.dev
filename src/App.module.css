@@ -15,7 +15,7 @@
 }
 
 .Item {
-  --gradient-overlay: rgba(0, 0, 0, 0.5);
+  --gradient-overlay: rgba(0, 0, 0, 0.4);
 
   position: relative;
   box-sizing: border-box;
@@ -48,26 +48,19 @@
   height: calc(100vw / 10);
   width: calc(100vw / 2.5);
   background-clip: padding-box;
-  border: solid 5px transparent;
+  border: 2px solid tomato;
 }
-
-/* .Current::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -5px;
-  border-radius: inherit;
-  background: linear-gradient(to right, red, orange);
-} */
 
 @media only screen and (max-width: 1000px) {
   .Item {
-    width: 45vw;
+    width: calc(50vw - 48px);
     height: 200px;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .Current {
+    width: 100%;
+    height: calc((100vh - 80px) / 4);
+    font-size: 24px;
   }
 }
