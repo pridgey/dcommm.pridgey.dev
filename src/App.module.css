@@ -1,0 +1,73 @@
+.App {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: masonry; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+.Item {
+  --gradient-overlay: rgba(0, 0, 0, 0.5);
+
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: calc(100vw / 5);
+  height: calc(100vw / 10);
+  flex: 1 0 auto;
+  background-image: var(--movie-bg);
+  background: linear-gradient(var(--gradient-overlay), var(--gradient-overlay))
+      0% 0% / cover,
+    var(--movie-bg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: rgba(10, 10, 10, 0.1) 0px 4px 12px;
+}
+
+.Watched {
+  filter: grayscale(1);
+}
+
+.Current {
+  position: relative;
+  height: calc(100vw / 10);
+  width: calc(100vw / 2.5);
+  background-clip: padding-box;
+  border: solid 5px transparent;
+}
+
+/* .Current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background: linear-gradient(to right, red, orange);
+} */
+
+@media only screen and (max-width: 1000px) {
+  .Item {
+    width: 45vw;
+    height: 200px;
+    font-size: 18px;
+  }
+}
