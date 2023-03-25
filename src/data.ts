@@ -362,7 +362,7 @@ export const data = [
   {
     movie_name: "Pixel Perfect",
     image_url: "/images/pixel-perfect.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
