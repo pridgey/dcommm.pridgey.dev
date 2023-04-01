@@ -64,7 +64,7 @@ const App: Component = () => {
           onClick={() => setSortMode("unwatched")}
           disabled={sortMode() === "unwatched"}
         >
-          Sort Watched then Unwatched
+          Sort Unwatched then Watched
         </button>
       </div>
       <For each={sortedMovies()}>
