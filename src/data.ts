@@ -644,13 +644,13 @@ export const data = [
   {
     movie_name: "Zenon: The Zequel",
     image_url: "/images/zenon-the-zequel.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
     movie_name: "Zenon: Z3",
     image_url: "/images/zenon-z3.jpg",
-    watched: false,
+    watched: true,
     current: false,
   },
   {
