@@ -81,7 +81,7 @@ export const data = [
     movie_name: "Cow Belles",
     image_url: "/images/cow-belles.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Dadnapped",
@@ -123,7 +123,7 @@ export const data = [
     movie_name: "Double Teamed",
     image_url: "/images/double-teamed.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Eddie's Million Dollar Cook-Off",
@@ -363,7 +363,7 @@ export const data = [
     movie_name: "Pixel Perfect",
     image_url: "/images/pixel-perfect.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Princess Protection Program",
@@ -645,7 +645,7 @@ export const data = [
     movie_name: "Zenon: The Zequel",
     image_url: "/images/zenon-the-zequel.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Zenon: Z3",
