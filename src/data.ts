@@ -93,7 +93,7 @@ export const data = [
     movie_name: "Den Brother",
     image_url: "/images/den-brother.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Descendants",
@@ -255,7 +255,7 @@ export const data = [
     movie_name: "Invisible Sister",
     image_url: "/images/invisible-sister.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Jett Jackson: The Movie",
@@ -333,7 +333,7 @@ export const data = [
     movie_name: "Mom's Got a Date with a Vampire",
     image_url: "/images/moms-got-a-date-with-a-vampire.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Motocrossed",
@@ -435,7 +435,7 @@ export const data = [
     movie_name: "Starstruck",
     image_url: "/images/starstruck.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Stepsister from Planet Weird",
@@ -447,7 +447,7 @@ export const data = [
     movie_name: "Stuck in the Suburbs",
     image_url: "/images/stuck-in-the-suburbs.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Tangled: Before Ever After",
@@ -501,7 +501,7 @@ export const data = [
     movie_name: "The Jennie Project",
     image_url: "/images/the-jennie-project.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "The Luck of the Irish",
@@ -531,7 +531,7 @@ export const data = [
     movie_name: "The Scream Team",
     image_url: "/images/the-scream-team.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "The Suite Life Movie",
@@ -567,7 +567,7 @@ export const data = [
     movie_name: "Tru Confessions",
     image_url: "/images/tru-confessions.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Twas the Night",
