@@ -92,7 +92,7 @@ export const data = [
   {
     movie_name: "Den Brother",
     image_url: "/images/den-brother.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -254,7 +254,7 @@ export const data = [
   {
     movie_name: "Invisible Sister",
     image_url: "/images/invisible-sister.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -332,7 +332,7 @@ export const data = [
   {
     movie_name: "Mom's Got a Date with a Vampire",
     image_url: "/images/moms-got-a-date-with-a-vampire.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -434,7 +434,7 @@ export const data = [
   {
     movie_name: "Starstruck",
     image_url: "/images/starstruck.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
