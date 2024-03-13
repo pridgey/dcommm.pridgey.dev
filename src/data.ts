@@ -141,7 +141,7 @@ export const data = [
     movie_name: "Frenemies",
     image_url: "/images/frenemies.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Full-Court Miracle",
@@ -171,7 +171,7 @@ export const data = [
     movie_name: "Girl vs. Monster",
     image_url: "/images/girl-vs-monster.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Go Figure",
@@ -309,7 +309,7 @@ export const data = [
     movie_name: "Let It Shine",
     image_url: "/images/let-it-shine.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Life Is Ruff",
@@ -387,7 +387,7 @@ export const data = [
     movie_name: "Read It and Weep",
     image_url: "/images/read-it-and-weep.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Ready to Run",
@@ -501,7 +501,7 @@ export const data = [
     movie_name: "The Jennie Project",
     image_url: "/images/the-jennie-project.jpg",
     watched: false,
-    current: true,
+    current: false,
   },
   {
     movie_name: "The Luck of the Irish",
@@ -567,7 +567,7 @@ export const data = [
     movie_name: "Tru Confessions",
     image_url: "/images/tru-confessions.jpg",
     watched: false,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Twas the Night",
