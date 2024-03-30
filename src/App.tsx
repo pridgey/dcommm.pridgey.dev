@@ -3,6 +3,7 @@ import { For, createSignal, createEffect, onMount } from "solid-js";
 import { data } from "./data";
 
 import styles from "./App.module.css";
+import { Switch } from "./components/Switch";
 
 type MovieData = {
   movie_name: string;
@@ -55,18 +56,27 @@ const App: Component = () => {
     <main class={styles.App}>
       <img src="/logo.svg" alt="site logo" />
       <div class={styles.Sortbar}>
-        <button
-          onClick={() => setSortMode("mixed")}
-          disabled={sortMode() === "mixed"}
-        >
-          Sort All Alphabetically
-        </button>
-        <button
-          onClick={() => setSortMode("unwatched")}
-          disabled={sortMode() === "unwatched"}
-        >
-          Sort Unwatched then Watched
-        </button>
+        <Switch
+          Description="Enable to Sort Unwatched -> Watched"
+          Label="Sort Unwatched"
+          OnChange={(isChecked) => {
+            setSortMode(isChecked ? "unwatched" : "mixed");
+          }}
+        />
+        <div class={styles.Stats}>
+          <span class={styles.Text}>
+            <strong>Watched:</strong>{" "}
+            {sortedMovies().filter((m) => m.watched && !m.disqualified).length}
+          </span>
+          <span class={styles.Text}>
+            <strong>Remaining:</strong>{" "}
+            {sortedMovies().filter((m) => !m.watched && !m.disqualified).length}{" "}
+            (~
+            {sortedMovies().filter((m) => !m.watched && !m.disqualified)
+              .length / 8}{" "}
+            years)
+          </span>
+        </div>
       </div>
       <For each={sortedMovies()}>
         {(movie) => (
