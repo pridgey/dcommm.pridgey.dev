@@ -190,6 +190,7 @@ export const data = [
     image_url: "/images/good-luck-charlie-its-christmas.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "Gotta Kick It Up!",
@@ -360,6 +361,7 @@ export const data = [
     image_url: "/images/phineas-and-ferb.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "Pixel Perfect",
