@@ -4,9 +4,6 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  /* display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: masonry; */
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -96,6 +93,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .Sortbar {
+    flex-direction: column;
+  }
+
   .Item {
     width: calc(50vw - 48px);
     height: 200px;
