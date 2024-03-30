@@ -93,7 +93,7 @@ export const data = [
     movie_name: "Den Brother",
     image_url: "/images/den-brother.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Descendants",
@@ -141,7 +141,7 @@ export const data = [
     movie_name: "Frenemies",
     image_url: "/images/frenemies.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Full-Court Miracle",
@@ -171,7 +171,7 @@ export const data = [
     movie_name: "Girl vs. Monster",
     image_url: "/images/girl-vs-monster.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Go Figure",
@@ -255,7 +255,7 @@ export const data = [
     movie_name: "Invisible Sister",
     image_url: "/images/invisible-sister.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Jett Jackson: The Movie",
@@ -292,12 +292,14 @@ export const data = [
     image_url: "/images/kim-possible.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "Kim Possible Movie: So the Drama",
     image_url: "/images/kim-possible-so-the-drama.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "Lemonade Mouth",
@@ -309,7 +311,7 @@ export const data = [
     movie_name: "Let It Shine",
     image_url: "/images/let-it-shine.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Life Is Ruff",
@@ -333,7 +335,7 @@ export const data = [
     movie_name: "Mom's Got a Date with a Vampire",
     image_url: "/images/moms-got-a-date-with-a-vampire.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Motocrossed",
@@ -387,7 +389,7 @@ export const data = [
     movie_name: "Read It and Weep",
     image_url: "/images/read-it-and-weep.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Ready to Run",
@@ -435,7 +437,7 @@ export const data = [
     movie_name: "Starstruck",
     image_url: "/images/starstruck.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Stepsister from Planet Weird",
@@ -447,7 +449,7 @@ export const data = [
     movie_name: "Stuck in the Suburbs",
     image_url: "/images/stuck-in-the-suburbs.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Tangled: Before Ever After",
@@ -496,6 +498,7 @@ export const data = [
     image_url: "/images/the-even-stevens-movie.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "The Jennie Project",
@@ -526,18 +529,20 @@ export const data = [
     image_url: "/images/the-proud-family.jpeg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "The Scream Team",
     image_url: "/images/the-scream-team.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "The Suite Life Movie",
     image_url: "/images/the-suite-life-movie.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "The Swap",
@@ -616,6 +621,7 @@ export const data = [
     image_url: "/images/wizards-of-waverly-place.jpg",
     watched: false,
     current: false,
+    disqualified: true,
   },
   {
     movie_name: "You Lucky Dog",

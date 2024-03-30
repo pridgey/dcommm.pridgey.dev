@@ -9,6 +9,7 @@ type MovieData = {
   image_url: string;
   watched: boolean;
   current: boolean;
+  disqualified?: boolean;
 };
 
 const App: Component = () => {
@@ -74,6 +75,7 @@ const App: Component = () => {
               [styles.Item]: true,
               [styles.Current]: movie.current,
               [styles.Watched]: movie.watched,
+              [styles.Disqualified]: movie.disqualified,
             }}
             style={{
               "--movie-bg": `url('${movie.image_url}')`,

@@ -45,6 +45,11 @@
   filter: grayscale(1);
 }
 
+.Disqualified {
+  filter: blur(4) grayscale(0.5) sepia(0.25);
+  text-decoration: line-through;
+}
+
 .Current {
   position: relative;
   height: calc(100vw / 10);
