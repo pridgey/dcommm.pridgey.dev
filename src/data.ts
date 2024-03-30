@@ -140,7 +140,7 @@ export const data = [
   {
     movie_name: "Frenemies",
     image_url: "/images/frenemies.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -170,7 +170,7 @@ export const data = [
   {
     movie_name: "Girl vs. Monster",
     image_url: "/images/girl-vs-monster.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -308,7 +308,7 @@ export const data = [
   {
     movie_name: "Let It Shine",
     image_url: "/images/let-it-shine.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -386,7 +386,7 @@ export const data = [
   {
     movie_name: "Read It and Weep",
     image_url: "/images/read-it-and-weep.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -446,7 +446,7 @@ export const data = [
   {
     movie_name: "Stuck in the Suburbs",
     image_url: "/images/stuck-in-the-suburbs.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -530,7 +530,7 @@ export const data = [
   {
     movie_name: "The Scream Team",
     image_url: "/images/the-scream-team.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
