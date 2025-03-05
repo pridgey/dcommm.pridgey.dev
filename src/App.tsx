@@ -1,5 +1,12 @@
 import type { Component } from "solid-js";
-import { For, createSignal, createEffect, onMount } from "solid-js";
+import {
+  For,
+  createSignal,
+  createEffect,
+  onMount,
+  Show,
+  createMemo,
+} from "solid-js";
 import { data } from "./data";
 
 import styles from "./App.module.css";
@@ -17,6 +24,9 @@ const App: Component = () => {
   const [sortMode, setSortMode] = createSignal<"mixed" | "unwatched">("mixed");
   const [sortedMovies, setSortedMovies] = createSignal<MovieData[]>([]);
 
+  // Memoized list of current movies (movies we're slated to watch)
+  const currentMovies = createMemo(() => data.filter((m) => m.current));
+
   // Utility function for sorting movies
   const sortMovies = (view: "mixed" | "unwatched") => {
     const currentMovies = data.filter((movie) => movie.current);
@@ -25,7 +35,7 @@ const App: Component = () => {
       // Current up top, everything else as normal underneath
       const nonCurrentMovies = data.filter((movie) => !movie.current);
 
-      setSortedMovies([...currentMovies, ...nonCurrentMovies]);
+      setSortedMovies([...nonCurrentMovies]);
     }
 
     if (sortMode() === "unwatched") {
@@ -37,7 +47,7 @@ const App: Component = () => {
         (movie) => !movie.current && !movie.watched
       );
 
-      setSortedMovies([...currentMovies, ...remainingMovies, ...watchedMovies]);
+      setSortedMovies([...remainingMovies, ...watchedMovies]);
     }
   };
 
@@ -55,10 +65,34 @@ const App: Component = () => {
   return (
     <main class={styles.App}>
       <img src="/logo.svg" alt="site logo" />
+      {/* On Deck - Current Movies */}
+      <Show when={!!currentMovies().length}>
+        <span class={styles.Title}>Currently On Deck:</span>
+        <For each={currentMovies()}>
+          {(currentMovie) => (
+            <div
+              classList={{
+                [styles.Item]: true,
+                [styles.Current]: true,
+                [styles.Watched]: currentMovie.watched,
+                [styles.Disqualified]: currentMovie.disqualified,
+              }}
+              style={{
+                "--movie-bg": `url('${currentMovie.image_url}')`,
+              }}
+            >
+              {currentMovie.movie_name}
+            </div>
+          )}
+        </For>
+        <hr />
+      </Show>
+      {/* Catalog with Sort */}
+      <span class={styles.Title}>Complete Catalog:</span>
       <div class={styles.Sortbar}>
         <Switch
-          Description="Enable to Sort Unwatched -> Watched"
-          Label="Sort Unwatched"
+          OnLabel="Sort Unwatched First"
+          OffLabel="Sort Alphabetically"
           OnChange={(isChecked) => {
             setSortMode(isChecked ? "unwatched" : "mixed");
           }}

@@ -75,6 +75,18 @@
   color: white;
 }
 
+.Title {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+}
+
 .Sortbar button {
   font-size: 20px;
   font-weight: 500;
