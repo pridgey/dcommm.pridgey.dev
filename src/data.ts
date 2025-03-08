@@ -225,13 +225,13 @@ export const data = [
   {
     movie_name: "High School Musical",
     image_url: "/images/high-school-musical.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
     movie_name: "High School Musical 2",
     image_url: "/images/high-school-musical-2.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
