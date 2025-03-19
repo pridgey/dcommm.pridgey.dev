@@ -664,13 +664,13 @@ export const data = [
   {
     movie_name: "Zombies",
     image_url: "/images/zombies.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
     movie_name: "Zombies 2",
     image_url: "/images/zombies-2.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
 ];
