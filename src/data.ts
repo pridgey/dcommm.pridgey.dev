@@ -86,7 +86,7 @@ export const data = [
   {
     movie_name: "Dadnapped",
     image_url: "/images/dadnapped.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -134,7 +134,7 @@ export const data = [
   {
     movie_name: "Freaky Friday",
     image_url: "/images/freaky-friday.jpeg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
