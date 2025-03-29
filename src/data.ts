@@ -38,8 +38,8 @@ export const data = [
   {
     movie_name: "Buffalo Dreams",
     image_url: "/images/buffalo-dreams.jpg",
-    watched: false,
-    current: true,
+    watched: true,
+    current: false,
   },
   {
     movie_name: "Cadet Kelly",
@@ -87,7 +87,7 @@ export const data = [
     movie_name: "Dadnapped",
     image_url: "/images/dadnapped.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Den Brother",
@@ -135,7 +135,7 @@ export const data = [
     movie_name: "Freaky Friday",
     image_url: "/images/freaky-friday.jpeg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Frenemies",
@@ -226,13 +226,13 @@ export const data = [
     movie_name: "High School Musical",
     image_url: "/images/high-school-musical.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "High School Musical 2",
     image_url: "/images/high-school-musical-2.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Horse Sense",
@@ -579,8 +579,8 @@ export const data = [
   {
     movie_name: "Twas the Night",
     image_url: "/images/twas-the-night.jpg",
-    watched: false,
-    current: true,
+    watched: true,
+    current: false,
   },
   {
     movie_name: "Twitches",
@@ -665,12 +665,12 @@ export const data = [
     movie_name: "Zombies",
     image_url: "/images/zombies.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
   {
     movie_name: "Zombies 2",
     image_url: "/images/zombies-2.jpg",
     watched: true,
-    current: true,
+    current: false,
   },
 ];
