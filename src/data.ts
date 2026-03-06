@@ -250,7 +250,7 @@ export const data = [
     movie_name: "How to Build a Better Boy",
     image_url: "/images/how-to-build-a-better-boy.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Invisible Sister",
@@ -268,7 +268,7 @@ export const data = [
     movie_name: "Johnny Kapahala: Back on Board",
     image_url: "/images/johnny-kapahala-back-on-board.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Johnny Tsunami",
@@ -330,7 +330,7 @@ export const data = [
     movie_name: "Miracle in Lane 2",
     image_url: "/images/miracle-in-lane-2.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Mom's Got a Date with a Vampire",
@@ -463,7 +463,7 @@ export const data = [
     movie_name: "Teen Beach Movie",
     image_url: "/images/teen-beach-movie.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Teen Beach 2",
@@ -562,13 +562,13 @@ export const data = [
     movie_name: "The Ultimate Christmas Present",
     image_url: "/images/the-ultimate-christmas-present.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Tiger Cruise",
     image_url: "/images/tiger-cruise.jpg",
     watched: false,
-    current: false,
+    current: true,
   },
   {
     movie_name: "Tru Confessions",
