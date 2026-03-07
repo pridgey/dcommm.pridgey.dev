@@ -567,7 +567,7 @@ export const data = [
   {
     movie_name: "Tiger Cruise",
     image_url: "/images/tiger-cruise.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
