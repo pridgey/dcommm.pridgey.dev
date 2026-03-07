@@ -267,7 +267,7 @@ export const data = [
   {
     movie_name: "Johnny Kapahala: Back on Board",
     image_url: "/images/johnny-kapahala-back-on-board.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
