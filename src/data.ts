@@ -462,7 +462,7 @@ export const data = [
   {
     movie_name: "Teen Beach Movie",
     image_url: "/images/teen-beach-movie.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
