@@ -249,7 +249,7 @@ export const data = [
   {
     movie_name: "How to Build a Better Boy",
     image_url: "/images/how-to-build-a-better-boy.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
@@ -561,7 +561,7 @@ export const data = [
   {
     movie_name: "The Ultimate Christmas Present",
     image_url: "/images/the-ultimate-christmas-present.jpg",
-    watched: false,
+    watched: true,
     current: true,
   },
   {
